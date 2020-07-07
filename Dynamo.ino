@@ -3,7 +3,7 @@
 //	Inspired by the game "Chicanery", by Anna Anthropy.
 //  JJ
 
-#define HEARTBEAT_INTERVAL 2000
+#define HEARTBEAT_INTERVAL 1700
 Timer heartbeatTimer;
 
 #define DEATH_INTERVAL 300
