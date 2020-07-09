@@ -10,13 +10,14 @@ Timer heartbeatTimer;
 Timer deathTimer;
 
 enum gameStates {READY, PLAY, DEATH};
-int gameState = READY;
+int gameState = PLAY;
 
 byte currentHue = 0;
 
 void setup() {
   randomize();
   newColor();
+  heartbeatTimer.set(HEARTBEAT_INTERVAL);
 }
 
 void loop() {
