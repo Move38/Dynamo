@@ -102,7 +102,15 @@ void readyDisplay() {
 }
 
 void newColor() {
-  currentHue = random(50) * 5;
+  byte newHue = random(50) * 5;
+
+  if (currentHue == newHue) {
+    currentHue = newHue + 100;
+  } else {
+    currentHue = newHue;
+  }
+
+  //currentHue = random(50) * 5;
 }
 
 void playDisplay() {
