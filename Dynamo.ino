@@ -105,7 +105,7 @@ void newColor() {
   byte newHue = random(50) * 5;
 
   if (currentHue == newHue) {
-    currentHue = newHue + 100;
+    currentHue = newHue - (newHue % 5) + 100;
   } else {
     currentHue = newHue;
   }
