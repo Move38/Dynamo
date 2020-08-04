@@ -14,10 +14,13 @@ int gameState = PLAY;
 
 byte currentHue = 0;
 
+bool skipToReady = false;
+
 void setup() {
   randomize();
   newColor();
   heartbeatTimer.set(HEARTBEAT_INTERVAL);
+  skipToReady = true;
 }
 
 void loop() {
@@ -59,8 +62,13 @@ void playLoop() {
   }
 
   if (heartbeatTimer.isExpired()) {
-    gameState = DEATH;
-    deathTimer.set(DEATH_INTERVAL);
+    if (skipToReady) {
+      gameState = READY;
+      skipToReady = false;
+    } else {
+      gameState = DEATH;
+      deathTimer.set(DEATH_INTERVAL);
+    }
   }
 }
 
