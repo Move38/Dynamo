@@ -6,7 +6,7 @@
 #define HEARTBEAT_INTERVAL 1700
 Timer heartbeatTimer;
 
-#define DEATH_INTERVAL 300
+#define DEATH_INTERVAL 2000
 Timer deathTimer;
 
 enum gameStates {READY, PLAY, DEATH};
