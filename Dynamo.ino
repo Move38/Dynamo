@@ -1,7 +1,18 @@
-
-//  "HoldOut" - A game by jwest.
-//	Inspired by the game "Chicanery", by Anna Anthropy.
-//  JJ
+/*
+ *  Dynamo
+ *  by Jonathan West. 2020
+ *  
+ *  Lead development by Jonathan West
+ *  Additional development by Move38
+ *
+ *  --------------------
+ *  Blinks by Move38
+ *  Brought to life via Kickstarter 2018
+ *
+ *  @madewithblinks
+ *  www.move38.com
+ *  --------------------
+ */
 
 #define HEARTBEAT_INTERVAL 1700
 Timer heartbeatTimer;
